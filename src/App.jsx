@@ -19,7 +19,7 @@ function App() {
 
   const enviar = async () => {
     try {
-      const res = await fetch("/.netlify/functions/enviar", {
+      const res = await fetch("/api/enviar", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ idea, tipo }),
